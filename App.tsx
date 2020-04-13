@@ -1,24 +1,34 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView, View } from 'react-native';
+
+import variables from './assets/style';
+
 import { Col, Row, Grid } from "react-native-easy-grid";
+import Box from './components/Box';
 
 export default function App() {
   return (
-    <ScrollView>
+    <ScrollView style={variables.app}>
       <View>
         <Text>Card goes here</Text>
       </View>
       <Grid>
         <Col>
-          <Row><Text>Open up App.tsx to start working on your app!</Text></Row>
-          <Row><Text>Open up App.tsx to start working on your app!</Text></Row>
+          <Row>
+            <Box />
+          </Row>
+          <Row>
+            <Box />
+          </Row>
         </Col>
         <Col>
-          <Row><Text>Open up App.tsx to start working on your app!</Text></Row>
+          <Row>
+            <Box />
+          </Row>
         </Col>
       </Grid>
       <View>
-        <Text>Card goes here</Text>
+        <Text>More stuff goes here</Text>
       </View>
     </ScrollView>
   );

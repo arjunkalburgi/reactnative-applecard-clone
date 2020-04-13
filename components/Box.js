@@ -4,20 +4,18 @@ import variables from '../assets/style';
 
 const styles = StyleSheet.create({
     container: {
+        margin: variables.box.margin,
+        borderRadius: variables.box.borderRadius,
+        width: variables.box.width,
         padding: 20,
         backgroundColor: '#eee',
-        borderRadius: 5,
-        height: 150
     },
 });
 
 const Box = () =>{
-
     return (
-        <View style={variables.box}>
-            <View style={styles.container}>
-                <Text>Box</Text>
-            </View>
+        <View style={styles.container}>
+            <Text>Box</Text>
         </View>
     );
 }

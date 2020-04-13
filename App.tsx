@@ -8,7 +8,7 @@ import Box from './components/Box';
 
 export default function App() {
   return (
-    <ScrollView style={variables.app}>
+    <ScrollView style={styles.app}>
       <View>
         <Text>Card goes here</Text>
       </View>
@@ -23,7 +23,7 @@ export default function App() {
         </Col>
         <Col>
           <Row>
-            <Box />
+            <Box style={styles.longBox} />
           </Row>
         </Col>
       </Grid>
@@ -41,4 +41,11 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'center',
   },
+  app: {
+    marginLeft: variables.app.marginLeft,
+    marginRight: variables.app.marginRight,
+  },
+  longBox: {
+    height: variables.longBox.height,
+  }
 });

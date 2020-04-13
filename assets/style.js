@@ -1,12 +1,15 @@
-import { StyleSheet } from 'react-native';
+const spacebetween = 10;
 
-const variables = StyleSheet.create({
+const variables = {
     app: {
-        margin: 15
+        marginLeft: 15,
+        marginRight: 15,
     },
     box: {
-        margin: 10,
-        width: 'calc(100% - 20px)'
+        margin: spacebetween/2,
+        borderRadius: spacebetween/2,
+        width: `calc(100% - ${spacebetween}px)`,
     },
-});
+    longBox: { height: `calc(100% - ${spacebetween}px)`, }
+};
 export default variables;

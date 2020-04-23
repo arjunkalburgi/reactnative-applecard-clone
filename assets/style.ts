@@ -17,6 +17,8 @@ const theme = {
     colors: {
         mainBackground: palette.white,
         cardPrimaryBackground: palette.purplePrimary,
+        black: palette.black, 
+        white: palette.white
     },
     spacing: {
         s: 8,
@@ -27,6 +29,26 @@ const theme = {
     breakpoints: {
         phone: 0,
         tablet: 768,
+        largeTablet: 1024,
+    },
+    textVariants: {
+        header: {
+            fontWeight: 'bold',
+            fontSize: 34,
+            lineHeight: 42.5,
+            // color: palette.black,
+        },
+        subheader: {
+            fontWeight: '600',
+            fontSize: 28,
+            lineHeight: 36,
+            // color: palette.black,
+        },
+        body: {
+            fontSize: 16,
+            lineHeight: 24,
+            // color: palette.black,
+        },
     },
     app: {
         marginLeft: 15,

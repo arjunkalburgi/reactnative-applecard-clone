@@ -40,5 +40,5 @@ const theme = {
     longBox: { height: `calc(100% - ${spacebetween}px)`, }
 };
 
-// export type Theme = typeof theme;
+export type Theme = typeof theme;
 export default theme;

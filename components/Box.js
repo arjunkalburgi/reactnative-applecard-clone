@@ -1,12 +1,12 @@
 import React from 'react'; 
 import { StyleSheet, Text, View } from 'react-native';
-import variables from '../assets/style';
+import theme from '../assets/style';
 
 const styles = StyleSheet.create({
     container: {
-        margin: variables.box.margin,
-        borderRadius: variables.box.borderRadius,
-        width: variables.box.width,
+        margin: theme.box.margin,
+        borderRadius: theme.box.borderRadius,
+        width: theme.box.width,
         padding: 20,
         backgroundColor: '#eee',
     },

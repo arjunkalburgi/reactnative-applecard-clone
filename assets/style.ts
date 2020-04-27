@@ -11,6 +11,7 @@ const palette = {
 
     black: '#0B0B0B',
     white: '#F0F2F3',
+    gray: '#666666',
 };
 
 const theme = {
@@ -18,7 +19,8 @@ const theme = {
         mainBackground: palette.white,
         cardPrimaryBackground: palette.purplePrimary,
         black: palette.black, 
-        white: palette.white
+        white: palette.white,
+        gray: palette.gray,
     },
     spacing: {
         s: 8,
@@ -49,6 +51,21 @@ const theme = {
             lineHeight: 24,
             // color: palette.black,
         },
+        cardTitle: {
+            fontWeight: '500',
+            fontSize: 15,
+            lineHeight: 24,
+        },
+        cardMain: {
+            fontWeight: '600',
+            fontSize: 26,
+            lineHeight: 30,
+        },
+        detail: {
+            fontSize: 14,
+            lineHeight: 20,
+            color: 'gray',
+        }
     },
     app: {
         marginLeft: 15,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Col, Row, Grid } from "react-native-easy-grid";
+import AccountDetailsCard from './../components/AccountDetailsCard';
 
 import {
     createBox,
@@ -69,12 +70,13 @@ const Home = () => {
             <Grid style={styles.section}>
                 <Col>
                     <Row>
-                        <Card style={styles.card}>
+                        <AccountDetailsCard style={styles.card}>
                             <Text variant="body">Something</Text>
-                        </Card>
+                        </AccountDetailsCard>
                     </Row>
                     <Row>
                         <Card style={styles.card}>
+                            <Text variant="body">Something</Text>
                             <Text variant="body">Something</Text>
                         </Card>
                     </Row>

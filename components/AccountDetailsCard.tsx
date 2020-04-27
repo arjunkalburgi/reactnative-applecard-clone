@@ -16,40 +16,6 @@ const Box = createBox<Theme>();
 const Text = createText<Theme>();
 
 const styles = StyleSheet.create({
-    card: {
-        // margin: theme.box.margin,
-        margin: theme.spacing.s,
-        borderRadius: theme.box.borderRadius,
-        width: theme.box.width,
-        padding: theme.spacing.s, //`${} ${theme.spacing.s} 0 0`,
-        backgroundColor: theme.colors.cardPrimaryBackground,
-
-        // shadowColor: 'white',
-        // shadowRadius: 8,
-        // shadowOpacity: 0.5,
-        // shadowOffset: {
-        //     width: -9,
-        //     height: -9
-        // },
-    },
-    shadow: {
-        height: '100%',
-        margin: 0,
-        padding: 0,
-        zIndex: -1,
-        width: '100%',
-        position: 'absolute',
-        borderRadius: theme.box.borderRadius,
-
-        // backgroundColor: theme.colors.mainBackground,
-        // shadowColor: '#a3b1c6',
-        // shadowRadius: 10,
-        // shadowOpacity: 0.3,
-        // shadowOffset: {
-        //     width: 9,
-        //     height: 9
-        // },
-    }, 
     boxBody: {
         padding: theme.spacing.s,
     }
@@ -57,11 +23,11 @@ const styles = StyleSheet.create({
 
 const AccountDetailsCard = () => {
     return (
-        <View style={styles.card}>
+        <View style={theme.card}>
             <Text variant="cardTitle">Card Balance</Text>
             <Text variant="cardMain">$1,682.55</Text>
             <Text variant="detail">$8,317.45 Available</Text>
-            <View style={styles.shadow}></View>
+            <View style={theme.shadow}></View>
         </View>
     );
 };

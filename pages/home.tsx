@@ -35,27 +35,7 @@ const styles = StyleSheet.create({
         width: theme.box.width,
         padding: theme.spacing.s,
         backgroundColor: theme.colors.mainBackground,
-
-        // shadowColor: 'white',
-        // shadowRadius: 8,
-        // shadowOpacity: 0.5,
-        // shadowOffset: {
-        //     width: -9,
-        //     height: -9
-        // },
     },
-    row: {
-        // backgroundColor: theme.colors.mainBackground,
-        // shadowColor: '#a3b1c6',
-        // shadowRadius: 10,
-        // shadowOpacity: 0.3,
-        // shadowOffset: {
-        //     width: 9,
-        //     height: 9
-        // },
-        // justifyContent: 'center',
-        // alignItems: 'center'
-    }
 });
 
 const Home = () => {
@@ -70,9 +50,7 @@ const Home = () => {
             <Grid style={styles.section}>
                 <Col>
                     <Row>
-                        <AccountDetailsCard style={styles.card}>
-                            <Text variant="body">Something</Text>
-                        </AccountDetailsCard>
+                        <AccountDetailsCard style={styles.card} />
                     </Row>
                     <Row>
                         <Card style={styles.card}>

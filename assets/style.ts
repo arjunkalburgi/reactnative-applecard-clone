@@ -14,7 +14,7 @@ const palette = {
     gray: '#666666',
 };
 
-const theme = {
+const themeElements = {
     colors: {
         mainBackground: palette.white,
         cardPrimaryBackground: palette.purplePrimary,
@@ -67,6 +67,9 @@ const theme = {
             color: 'gray',
         }
     },
+};
+
+const appStyles = {
     app: {
         marginLeft: 15,
         marginRight: 15,
@@ -76,8 +79,43 @@ const theme = {
         borderRadius: spacebetween / 2,
         width: `calc(100% - ${spacebetween}px)`,
     },
-    longBox: { height: `calc(100% - ${spacebetween}px)`, }
-};
+    longBox: { height: `calc(100% - ${spacebetween}px)`, }, 
+    card: {
+        margin: themeElements.spacing.s,
+        borderRadius: spacebetween / 2,
+        width: `calc(100% - ${spacebetween}px)`,
+        padding: themeElements.spacing.s, //`${} ${theme.spacing.s} 0 0`,
+        backgroundColor: themeElements.colors.mainBackground,
+
+        // shadowColor: 'white',
+        // shadowRadius: 8,
+        // shadowOpacity: 0.5,
+        // shadowOffset: {
+        //     width: -9,
+        //     height: -9
+        // },
+    },
+    shadow: {
+        height: '100%',
+        margin: 0,
+        padding: 0,
+        zIndex: -1,
+        width: '100%',
+        position: 'absolute',
+        borderRadius: spacebetween / 2,
+
+        // backgroundColor: theme.colors.mainBackground,
+        // shadowColor: '#a3b1c6',
+        // shadowRadius: 10,
+        // shadowOpacity: 0.3,
+        // shadowOffset: {
+        //     width: 9,
+        //     height: 9
+        // },
+    }, 
+}
+
+const theme: any = {...themeElements, ...appStyles};
 
 export type Theme = typeof theme;
 export default theme;
